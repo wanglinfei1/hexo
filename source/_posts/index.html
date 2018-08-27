@@ -1,0 +1,25 @@
+---
+title: 主页
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title type="0">终端H5</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+<div style="text-align: center; font-size: 24px;">欢迎您访问</div>
+</body>
+<script>
+  window.onload = function(){
+    var footer_custom = document.getElementById('footer-custom')
+    var loc=window.location;
+    if(loc.host == 'm.wzytop.top'&&(loc.pathname=='/'||loc.pathname=='/index.html'||loc.pathname=='/index')){
+      footer_custom.innerHTML = 'Hosted by <a target="_blank" rel="external nofollow" href="https://coding.net/pages"><b>Coding Pages</b></a>'
+      footer_custom.style.display="block"
+    }
+  }
+</script>
+</html>
